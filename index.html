@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Beyoğlu haritası</title> // site başlığı 
+    <title>Beyoğlu haritası</title> 
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet'/>
@@ -41,8 +41,8 @@ section:last-child {
 <div id='map'></div>
 <div id='features'>
     <section id='intro' class='active'>
-        <h3>Welcome to Beyoğlu</h3>
-        <p>This is Los Angeles</p>
+        <h2>Welcome to Beyoğlu</h2>
+        <p>Burası dünyanın eski yerleşimlerinden biri.</p>
     </section>
     <section id='boyleheights'>
         <h3>The neighborhood of Boyle Heights</h3>
@@ -80,8 +80,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3J1emluNzN2dyIsImEiOiJjajJ3djc3ZHAwMHh1Mzhxc
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [-118.2680, 34.0622],
-    zoom: 9.48,
+    center: [28.996343, 41.025308], 
+    zoom: 10.835,
     bearing: 24.3,
     pitch: 0,
     hash:true
@@ -90,9 +90,9 @@ var map = new mapboxgl.Map({
 //This are the locations for your map to move along with your story
 //This is variable created an object called an JSON, you can add and remove chapters to the story. Make sure you reflect the changes in the sections with the text of your story.    
 var chapters = {
-    'losangeles': {
+    'intro': {
         bearing: 0,
-        center: [-118.2680, 34.0622],
+        center: [28.996343, 41.025308],
         zoom: 9.48,
         bearing: 24.3,
         pitch: 0,
