@@ -44,9 +44,11 @@ section:last-child {
         <h2>Welcome to Beyoğlu</h2>
         <p>Burası dünyanın eski yerleşimlerinden biri.</p>
     </section>
-    <section id='boyleheights'>
-        <h3>The neighborhood of Boyle Heights</h3>
-        <p>Let's head down to the nieghborhood of Boyle Heights</p>
+    <section id='taksim'>
+        <h3>Taksim Meydanı</h3>
+        <img src="https://uploads.knightlab.com/storymapjs/93573c32cfef3f6424c2a01e1fbc4c2f/beyoglu/_images/nakiye elgun.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rP2csJv7AIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Taksim Meydanı</p>
     </section>
     <section id='centralave'>
         <h3>Down Central Ave</h3>
@@ -81,8 +83,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [28.996343, 41.025308], 
-    zoom: 10.835,
-    bearing: 24.3,
+    zoom: 12,
+    bearing: 2,
     pitch: 0,
     hash:true
 });
@@ -93,11 +95,11 @@ var chapters = {
     'intro': {
         bearing: 0,
         center: [28.996343, 41.025308],
-        zoom: 9.48,
-        bearing: 24.3,
+        zoom: 12,
+        bearing: 2,
         pitch: 0,
     },
-    'boyleheights': {
+    'taksim': {
         duration: 6000,
         center: [-118.2120, 34.0323],
         bearing: -57.3,
